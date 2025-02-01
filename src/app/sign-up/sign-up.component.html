@@ -1,0 +1,108 @@
+
+
+<main>
+    <br><br>
+    <div class="signup-container">
+      <img src="https://media.istockphoto.com/id/1488629087/vector/discount-coupon-35-percent-off-gift-voucher-with-percentage-marks-qr-code-and-promo-codes.jpg?s=612x612&w=0&k=20&c=0XYVOQwWorLekYUyFmg0NYYONtGsJrNgmYWipalJMoQ=" alt="" />
+      <div class="form mb-8">
+        <form class="row g-3 needs-validation" (ngSubmit)="onSubmit(form)" #form="ngForm">
+          <div class="col-md-4 position-relative">
+            <label for="firstName" class="form-label">First name</label>
+            <input type="text" class="form-control" id="firstName" name="fname" ngModel required />
+            
+          </div>
+  
+          <div class="col-md-4 position-relative">
+            <label for="lastName" class="form-label">Last name</label>
+            <input type="text" class="form-control" id="lastName" name="lname"  ngModel required />
+          </div>
+  
+          <div class="col-md-4 position-relative">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" name="email" ngModel required />       
+          </div>
+  
+          <div class="col-md-4 position-relative">
+            <label for="phone" class="form-label">Phone</label>
+            <input type="number" class="form-control" id="phone" name="phone" ngModel required
+            />
+           
+          </div>
+
+          <div class="col-md-4 position-relative">
+            <label for="password" class="form-label">Password</label>
+            <input
+              type="password"
+              class="form-control"
+              id="password"
+              name="password"
+              ngModel
+              
+              required
+            />
+            
+          </div>
+  
+          <div class="col-md-6 position-relative">
+            <label for="city" class="form-label">City</label>
+            <input
+              type="text"
+              class="form-control"
+              id="city"
+              name="city"
+              ngModel
+              
+              required
+            />
+            
+          </div>
+  
+          <div class="col-md-3 position-relative">
+            <label for="state" class="form-label">State</label>
+            <select
+              class="form-select"
+              id="state"
+              name="state"
+              ngModel
+              
+              required
+            >
+              <option selected disabled value="">Choose...</option>
+              <option>State 1</option>
+              <option>State 2</option>
+            </select>
+           
+          </div>
+  
+          <div class="col-md-3 position-relative">
+            <label for="zip" class="form-label">Zip</label>
+            <input
+              type="text"
+              class="form-control"
+              id="zip"
+              name="zipcode"
+              ngModel
+             
+              required
+            />
+            
+          </div>
+  
+          <div class="col-12">
+            <button class="btn btn-primary" type="submit">Submit form</button>
+          </div>
+          <p style="display: inline;">
+            Don't have an account? 
+            <a class="nav-link fw-bold small" id="navbarDropdownMenuLink" role="button" 
+               [routerLink]="['/login']" routerLinkActive="router-link-active" id="signup"
+               style="display: inline;">
+              Login
+            </a>
+          </p>
+        </form>
+      </div>
+    </div>
+  </main>
+  
+
+

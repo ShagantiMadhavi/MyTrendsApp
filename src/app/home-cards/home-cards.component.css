@@ -1,0 +1,20 @@
+.cards{
+  padding: 3%;
+  
+}
+
+.card{
+  /* margin: 3.7%; */
+  height: 380px;
+  width: 198px;
+  color: white;
+  background-color: #626566;
+}
+img{
+  padding: 5%;
+  height: 250px;
+}
+
+/* .card-body{
+  height: 50px;
+} */

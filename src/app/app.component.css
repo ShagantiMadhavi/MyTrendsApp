@@ -1,0 +1,7 @@
+
+
+.header:hover .main-body{
+    background-color: red; /* Fallback color */
+    background-color: blue; /* Black w/ opacity */
+
+}

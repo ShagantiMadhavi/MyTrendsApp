@@ -1,0 +1,108 @@
+
+.logo-box{
+    /* margin-top: 1.5%; */
+    padding-top: 2%;
+    padding-left: 7%;
+    padding-right: 7%;
+}
+.courosel-box{
+
+  padding-top: 1%;
+    padding-left: 7%;
+    padding-right: 7%;
+    /* padding: 4%; */
+    /* margin-top:-7%; */
+}
+#ribbon{
+    height: 280px;
+    width: 100%;
+    object-fit: fill;
+    /* object-position: top; */
+    /* border-radius: 10px; Removes default border-radius */
+    mask: radial-gradient(40px at 40px 40px, transparent 98%, black) -40px -40px;    
+   
+
+}
+#images{
+    /* margin-top:3%; */
+ 
+}
+
+#courosel-img{
+    object-fit: cover;
+    aspect-ratio: 1.5;
+    padding: calc(1*5px);
+    background: #e0e0d1;
+    border-radius: 5px; 
+    mask: 
+      radial-gradient(5px,#0000 97%,#000) round 
+       calc(-1.5*5px) calc(-1.5*5px)/calc(3*5px) calc(3*5px), 
+      linear-gradient(#000 0 0) no-repeat 50%/calc(100% - 3*5px) calc(100% - 3*0px);
+  
+}
+
+/* #heading-1{
+  padding-top: 1%;
+  padding-left: 4%;
+  padding-right: 4%;
+} */
+@keyframes infiniteScroll {
+    from {transform: translateX(0)}
+    to {transform: translateX(-50%)}
+  }
+
+  /* scrolling-text */
+  .text-scroll{
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-top: 2%;
+    color: navy;
+  }
+  .container-fluid {
+
+   
+    width: 100%;
+    overflow-x: hidden;
+    /* background-color: pink; */
+   
+  }
+
+
+  .horizontal-scrolling-items {
+    
+    display: flex;
+    font-size: 40px;
+    width: 2600px;
+    animation-name: infiniteScroll;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  .horizontal-scrolling-items__item {
+    white-space: nowrap;
+  }
+
+  .shop-by-cat{
+    font-size: 1.5rem;
+    background: #43C6AC;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #F8FFAE, #43C6AC);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #F8FFAE, #43C6AC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    padding: 1%;
+    margin-top: 2%;
+    margin-left: 7%;
+    margin-right: 7%;
+
+  }
+
+  @keyframes marquee {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+
+  

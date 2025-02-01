@@ -1,0 +1,456 @@
+<div class="container-fluid">
+    <div class="row">
+        <!-- Left Header -->
+        <div class="col-2 left-col">
+            <div class="pb-3 pt-3 fw-bold" style="font-size: small;">FILTERS <span style="float: right; color: rgb(248, 41, 182);">CLEAR ALL</span></div>
+            <div>
+                <p class="fw-bold" style="font-size: 0.9rem;">GENDER</p>
+                <div class="form-check">
+                    <input class="form-check-input custom-radio" type="radio" name="gender" id="women" checked>
+                    <label class="form-check-label fw-bold" for="women" style="font-size: small; color: rgb(74, 67, 67);">WOMEN</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input custom-radio" type="radio" name="gender" id="girls">
+                    <label class="form-check-label fw-bold" for="girls" style="font-size: small; color: rgb(74, 67, 67);">GIRLS</label>
+                </div>
+            </div>
+            
+
+            <div class="side-menu">
+                <div class="pt-4">
+                    <p class="fw-bold" style="font-size: small;">CATEGORIES</p>
+
+                    <div *ngFor="let item of category"></div>
+                    <div class="form-check">
+                        <input class="form-check-input custom-checkbox" type="checkbox" id="tops" checked>
+                        <label class="form-check-label" for="tops"> Tops <span style="color: rgb(129, 122, 122);">(3836)</span></label>
+                    </div>
+                        
+                        <div class="form-check">
+                            <input class="form-check-input custom-checkbox " type="checkbox" id="tshirts">
+                            <label class="form-check-label" for="tshirts">Kurtas <span style="color: rgb(129, 122, 122);"> (1326)</span></label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input custom-checkbox" type="checkbox" id="tshirts">
+                            <label class="form-check-label" for="tshirts">T-Shirts <span style="color: rgb(129, 122, 122);"> (1370)</span></label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input custom-checkbox" type="checkbox" id="skirts">
+                            <label class="form-check-label" for="skirts"> Kurta-sets<span style="color: rgb(129, 122, 122);"> (3013)</span></label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input custom-checkbox" type="checkbox" id="kurta">
+                            <label class="form-check-label" for="kurta">Night Suits  <span style="color: rgb(129, 122, 122);">(4075)</span></label>
+                        </div>
+                        
+                        <div class="form-check">
+                            <input class="form-check-input custom-checkbox" type="checkbox" id="skirts">
+                            <label class="form-check-label" for="skirts"> Skirts<span style="color: rgb(129, 122, 122);"> (2303)</span></label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input custom-checkbox" type="checkbox" id="kurta">
+                            <label class="form-check-label" for="kurta"> Shorts<span style="color: rgb(129, 122, 122);"> (1677)</span></label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input custom-checkbox" type="checkbox" id="tshirts">
+                            <label class="form-check-label" for="tshirts"> Jeans<span style="color: rgb(129, 122, 122);"> (8326)</span></label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input custom-checkbox" type="checkbox" id="skirts">
+                            <label class="form-check-label" for="skirts">Skirts <span style="color: rgb(129, 122, 122);"> (3303)</span></label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input custom-checkbox" type="checkbox" id="kurta">
+                            <label class="form-check-label" for="kurta"> Kurtas<span style="color: rgb(129, 122, 122);"> (5655)</span></label>
+                        </div>
+                       
+                </div>
+
+                <div class="pt-4">
+                    <p class="fw-bold" style="font-size: small;">BRAND</p>
+                    <div class="form-check">
+                        <input class="form-check-input custom-checkbox" type="checkbox" id="tops" checked>
+                        <label class="form-check-label" for="tops">Tops (3836)</label>
+                    </div>
+                    
+                    <div class="form-check">
+                        <input class="form-check-input custom-checkbox" type="checkbox" id="tshirts">
+                        <label class="form-check-label" for="tshirts">T-Shirts (1326)</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input custom-checkbox" type="checkbox" id="skirts">
+                        <label class="form-check-label" for="skirts">Skirts (303)</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input custom-checkbox" type="checkbox" id="kurta">
+                        <label class="form-check-label" for="kurta">Kurtas (3675)</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input custom-checkbox" type="checkbox" id="tshirts">
+                        <label class="form-check-label" for="tshirts">T-Shirts (1326)</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input custom-checkbox" type="checkbox" id="skirts">
+                        <label class="form-check-label" for="skirts">Skirts (303)</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input custom-checkbox" type="checkbox" id="kurta">
+                        <label class="form-check-label" for="kurta">Kurtas (3675)</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input custom-checkbox" type="checkbox" id="tshirts">
+                        <label class="form-check-label" for="tshirts">T-Shirts (1326)</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input custom-checkbox" type="checkbox" id="skirts">
+                        <label class="form-check-label" for="skirts">Skirts (303)</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input custom-checkbox" type="checkbox" id="kurta">
+                        <label class="form-check-label" for="kurta">Kurtas (3675)</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input custom-checkbox" type="checkbox" id="tshirts">
+                        <label class="form-check-label" for="tshirts">T-Shirts (1326)</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input custom-checkbox" type="checkbox" id="skirts">
+                        <label class="form-check-label" for="skirts">Skirts (303)</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input custom-checkbox" type="checkbox" id="kurta">
+                        <label class="form-check-label" for="kurta">Kurtas (3675)</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input custom-checkbox" type="checkbox" id="tshirts">
+                        <label class="form-check-label" for="tshirts">T-Shirts (1326)</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input custom-checkbox" type="checkbox" id="skirts">
+                        <label class="form-check-label" for="skirts">Skirts (303)</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input custom-checkbox" type="checkbox" id="kurta">
+                        <label class="form-check-label" for="kurta">Kurtas (3675)</label>
+                    </div>
+                   
+                </div>
+
+                <div class="pt-4">
+                    <p class="fw-bold" style="font-size: small;">PRICE</p>
+                    <input type="range" value="40" min="0" max="100" step="1" class="progress" style="color: red;">
+                </div>
+
+                <div>
+                    <p class="fw-bold" style="font-size: small;">COLOR</p>
+                        <div class="form-check">
+                            <input class="form-check-input custom-checkbox" type="checkbox" id="tops" checked>
+                            <label class="form-check-label" for="tops"><span class="dot" style="background-color: rgb(7, 6, 6);"></span> Black</label>
+                        </div>
+                        
+                        <div class="form-check">
+                            <input class="form-check-input custom-checkbox" type="checkbox" id="tshirts">
+                            <label class="form-check-label" for="tshirts"><span class="dot" style="background-color: white; border: 1px solid rgb(180, 174, 174);"></span> White</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input custom-checkbox" type="checkbox" id="skirts">
+                            <label class="form-check-label" for="skirts"><span class="dot" style="background-color: rgb(106, 59, 216);"></span> Navy Blue</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input custom-checkbox" type="checkbox" id="kurta">
+                            <label class="form-check-label" for="kurta"><span class="dot" style="background-color: rgb(57, 142, 211);"></span> Blue</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input custom-checkbox" type="checkbox" id="tshirts">
+                            <label class="form-check-label" for="tshirts"><span class="dot" style="background-color: rgb(238, 36, 171);"></span> Pink</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input custom-checkbox" type="checkbox" id="skirts">
+                            <label class="form-check-label" for="skirts"><span class="dot" style="background-color: rgb(239, 17, 17);"></span> Red</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input custom-checkbox" type="checkbox" id="kurta">
+                            <label class="form-check-label" for="kurta"><span class="dot" style="background-color: rgb(24, 213, 14);"></span> Green</label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input custom-checkbox" type="checkbox" id="kurta">
+                            <label class="form-check-label" for="kurta"><span class="dot" style="background-color: rgb(251, 239, 22);"></span> Yellow</label>
+                        </div>
+                       
+                </div>
+
+                
+            <div class="pt-4">
+                <p class="fw-bold" style="font-size: small;color: palevioletred  !important;">DISCOUNT RANGE</p>
+                   
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="gender" id="women" checked>
+                    <label class="form-check-label" for="women">10% and Above</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="gender" id="girls">
+                    <label class="form-check-label" for="girls">20% and Above</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="gender" id="women" checked>
+                    <label class="form-check-label" for="women">10% and Above</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="gender" id="girls">
+                    <label class="form-check-label" for="girls">20% and Above</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="gender" id="women" checked>
+                    <label class="form-check-label" for="women">10% and Above</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="gender" id="girls">
+                    <label class="form-check-label" for="girls">20% and Above</label>
+                </div>
+       
+            </div>
+            </div>
+            
+
+           
+
+           
+
+           
+
+            
+        </div>
+
+        <div class="col-10 right-col">
+            <div class="pb-3 pt-3 d-flex justify-content-between align-items-center">
+                <!-- Left-aligned collapsible buttons -->
+                <div>
+                    <a class="btn btn-primary me-2" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                        Bundles
+                    </a>
+                    <a class="btn btn-primary me-2" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                        Country of Origin
+                    </a>
+                    <a class="btn btn-primary me-2" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                        Size
+                    </a>
+                </div>
+        
+                <!-- Right-aligned dropdown -->
+                <div>
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Sort By</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+            </div>
+        
+            <!-- Collapsible content -->
+            <div class="collapse mt-3" id="collapseExample">
+                <div class="card card-body">
+                    Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                </div>
+            </div>
+        
+             <!-- Cards Section -->
+            <div>
+                <div class="row p-3">
+                    <div class="col">
+                        <div class="product-card p-3">
+                            <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTjTR3B9kefHz_Wjn40nRP5Q7o2aSotHA7mXfqqjmLn1kWTyzDaBSxOVCyyADvhjCfiUwXoQXM44jfl512eH2kfj9XfN2t86tCCv5kkq7-aXsxa-QoUjVwC9w"  width="100%" alt="Product 3">
+    
+                            <h6 class="mt-3">SASSAFRAS</h6>
+                            <p>High Neck Cropped Top</p>
+                            <p class="text-success fw-bold">Rs. 399 <span class="text-muted text-decoration-line-through">Rs. 999</span> (60% OFF)</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="product-card p-3">
+                            <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTjTR3B9kefHz_Wjn40nRP5Q7o2aSotHA7mXfqqjmLn1kWTyzDaBSxOVCyyADvhjCfiUwXoQXM44jfl512eH2kfj9XfN2t86tCCv5kkq7-aXsxa-QoUjVwC9w"  width="100%" alt="Product 3">
+    
+                            <h6 class="mt-3">SASSAFRAS</h6>
+                            <p>High Neck Cropped Top</p>
+                            <p class="text-success fw-bold">Rs. 399 <span class="text-muted text-decoration-line-through">Rs. 999</span> (60% OFF)</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="product-card p-3">
+                            <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTjTR3B9kefHz_Wjn40nRP5Q7o2aSotHA7mXfqqjmLn1kWTyzDaBSxOVCyyADvhjCfiUwXoQXM44jfl512eH2kfj9XfN2t86tCCv5kkq7-aXsxa-QoUjVwC9w"  width="100%" alt="Product 3">
+    
+                            <h6 class="mt-3">SASSAFRAS</h6>
+                            <p>High Neck Cropped Top</p>
+                            <p class="text-success fw-bold">Rs. 399 <span class="text-muted text-decoration-line-through">Rs. 999</span> (60% OFF)</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="product-card p-3">
+                            <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTjTR3B9kefHz_Wjn40nRP5Q7o2aSotHA7mXfqqjmLn1kWTyzDaBSxOVCyyADvhjCfiUwXoQXM44jfl512eH2kfj9XfN2t86tCCv5kkq7-aXsxa-QoUjVwC9w"  width="100%" alt="Product 3">
+    
+                            <h6 class="mt-3">SASSAFRAS</h6>
+                            <p>High Neck Cropped Top</p>
+                            <p class="text-success fw-bold">Rs. 399 <span class="text-muted text-decoration-line-through">Rs. 999</span> (60% OFF)</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="product-card p-3">
+                            <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTjTR3B9kefHz_Wjn40nRP5Q7o2aSotHA7mXfqqjmLn1kWTyzDaBSxOVCyyADvhjCfiUwXoQXM44jfl512eH2kfj9XfN2t86tCCv5kkq7-aXsxa-QoUjVwC9w"  width="100%" alt="Product 3">
+    
+                            <h6 class="mt-3">SASSAFRAS</h6>
+                            <p>High Neck Cropped Top</p>
+                            <p class="text-success fw-bold">Rs. 399 <span class="text-muted text-decoration-line-through">Rs. 999</span> (60% OFF)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row p-3">
+                    <div class="col">
+                        <div class="product-card p-3">
+                            <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTjTR3B9kefHz_Wjn40nRP5Q7o2aSotHA7mXfqqjmLn1kWTyzDaBSxOVCyyADvhjCfiUwXoQXM44jfl512eH2kfj9XfN2t86tCCv5kkq7-aXsxa-QoUjVwC9w"  width="100%" alt="Product 3">
+    
+                            <h6 class="mt-3">SASSAFRAS</h6>
+                            <p>High Neck Cropped Top</p>
+                            <p class="text-success fw-bold">Rs. 399 <span class="text-muted text-decoration-line-through">Rs. 999</span> (60% OFF)</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="product-card p-3">
+                            <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTjTR3B9kefHz_Wjn40nRP5Q7o2aSotHA7mXfqqjmLn1kWTyzDaBSxOVCyyADvhjCfiUwXoQXM44jfl512eH2kfj9XfN2t86tCCv5kkq7-aXsxa-QoUjVwC9w"  width="100%" alt="Product 3">
+    
+                            <h6 class="mt-3">SASSAFRAS</h6>
+                            <p>High Neck Cropped Top</p>
+                            <p class="text-success fw-bold">Rs. 399 <span class="text-muted text-decoration-line-through">Rs. 999</span> (60% OFF)</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="product-card p-3">
+                            <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTjTR3B9kefHz_Wjn40nRP5Q7o2aSotHA7mXfqqjmLn1kWTyzDaBSxOVCyyADvhjCfiUwXoQXM44jfl512eH2kfj9XfN2t86tCCv5kkq7-aXsxa-QoUjVwC9w"  width="100%" alt="Product 3">
+    
+                            <h6 class="mt-3">SASSAFRAS</h6>
+                            <p>High Neck Cropped Top</p>
+                            <p class="text-success fw-bold">Rs. 399 <span class="text-muted text-decoration-line-through">Rs. 999</span> (60% OFF)</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="product-card p-3">
+                            <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTjTR3B9kefHz_Wjn40nRP5Q7o2aSotHA7mXfqqjmLn1kWTyzDaBSxOVCyyADvhjCfiUwXoQXM44jfl512eH2kfj9XfN2t86tCCv5kkq7-aXsxa-QoUjVwC9w"  width="100%" alt="Product 3">
+    
+                            <h6 class="mt-3">SASSAFRAS</h6>
+                            <p>High Neck Cropped Top</p>
+                            <p class="text-success fw-bold">Rs. 399 <span class="text-muted text-decoration-line-through">Rs. 999</span> (60% OFF)</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="product-card p-3">
+                            <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTjTR3B9kefHz_Wjn40nRP5Q7o2aSotHA7mXfqqjmLn1kWTyzDaBSxOVCyyADvhjCfiUwXoQXM44jfl512eH2kfj9XfN2t86tCCv5kkq7-aXsxa-QoUjVwC9w"  width="100%" alt="Product 3">
+    
+                            <h6 class="mt-3">SASSAFRAS</h6>
+                            <p>High Neck Cropped Top</p>
+                            <p class="text-success fw-bold">Rs. 399 <span class="text-muted text-decoration-line-through">Rs. 999</span> (60% OFF)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row p-3">
+                    <div class="col">
+                        <div class="product-card p-3">
+                            <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTjTR3B9kefHz_Wjn40nRP5Q7o2aSotHA7mXfqqjmLn1kWTyzDaBSxOVCyyADvhjCfiUwXoQXM44jfl512eH2kfj9XfN2t86tCCv5kkq7-aXsxa-QoUjVwC9w"  width="100%" alt="Product 3">
+    
+                            <h6 class="mt-3">SASSAFRAS</h6>
+                            <p>High Neck Cropped Top</p>
+                            <p class="text-success fw-bold">Rs. 399 <span class="text-muted text-decoration-line-through">Rs. 999</span> (60% OFF)</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="product-card p-3">
+                            <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTjTR3B9kefHz_Wjn40nRP5Q7o2aSotHA7mXfqqjmLn1kWTyzDaBSxOVCyyADvhjCfiUwXoQXM44jfl512eH2kfj9XfN2t86tCCv5kkq7-aXsxa-QoUjVwC9w"  width="100%" alt="Product 3">
+    
+                            <h6 class="mt-3">SASSAFRAS</h6>
+                            <p>High Neck Cropped Top</p>
+                            <p class="text-success fw-bold">Rs. 399 <span class="text-muted text-decoration-line-through">Rs. 999</span> (60% OFF)</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="product-card p-3">
+                            <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTjTR3B9kefHz_Wjn40nRP5Q7o2aSotHA7mXfqqjmLn1kWTyzDaBSxOVCyyADvhjCfiUwXoQXM44jfl512eH2kfj9XfN2t86tCCv5kkq7-aXsxa-QoUjVwC9w"  width="100%" alt="Product 3">
+    
+                            <h6 class="mt-3">SASSAFRAS</h6>
+                            <p>High Neck Cropped Top</p>
+                            <p class="text-success fw-bold">Rs. 399 <span class="text-muted text-decoration-line-through">Rs. 999</span> (60% OFF)</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="product-card p-3">
+                            <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTjTR3B9kefHz_Wjn40nRP5Q7o2aSotHA7mXfqqjmLn1kWTyzDaBSxOVCyyADvhjCfiUwXoQXM44jfl512eH2kfj9XfN2t86tCCv5kkq7-aXsxa-QoUjVwC9w"  width="100%" alt="Product 3">
+    
+                            <h6 class="mt-3">SASSAFRAS</h6>
+                            <p>High Neck Cropped Top</p>
+                            <p class="text-success fw-bold">Rs. 399 <span class="text-muted text-decoration-line-through">Rs. 999</span> (60% OFF)</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="product-card p-3">
+                            <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTjTR3B9kefHz_Wjn40nRP5Q7o2aSotHA7mXfqqjmLn1kWTyzDaBSxOVCyyADvhjCfiUwXoQXM44jfl512eH2kfj9XfN2t86tCCv5kkq7-aXsxa-QoUjVwC9w"  width="100%" alt="Product 3">
+    
+                            <h6 class="mt-3">SASSAFRAS</h6>
+                            <p>High Neck Cropped Top</p>
+                            <p class="text-success fw-bold">Rs. 399 <span class="text-muted text-decoration-line-through">Rs. 999</span> (60% OFF)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row p-3">
+                    <div class="col">
+                        <div class="product-card p-3">
+                            <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTjTR3B9kefHz_Wjn40nRP5Q7o2aSotHA7mXfqqjmLn1kWTyzDaBSxOVCyyADvhjCfiUwXoQXM44jfl512eH2kfj9XfN2t86tCCv5kkq7-aXsxa-QoUjVwC9w"  width="100%" alt="Product 3">
+    
+                            <h6 class="mt-3">SASSAFRAS</h6>
+                            <p>High Neck Cropped Top</p>
+                            <p class="text-success fw-bold">Rs. 399 <span class="text-muted text-decoration-line-through">Rs. 999</span> (60% OFF)</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="product-card p-3">
+                            <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTjTR3B9kefHz_Wjn40nRP5Q7o2aSotHA7mXfqqjmLn1kWTyzDaBSxOVCyyADvhjCfiUwXoQXM44jfl512eH2kfj9XfN2t86tCCv5kkq7-aXsxa-QoUjVwC9w"  width="100%" alt="Product 3">
+    
+                            <h6 class="mt-3">SASSAFRAS</h6>
+                            <p>High Neck Cropped Top</p>
+                            <p class="text-success fw-bold">Rs. 399 <span class="text-muted text-decoration-line-through">Rs. 999</span> (60% OFF)</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="product-card p-3">
+                            <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTjTR3B9kefHz_Wjn40nRP5Q7o2aSotHA7mXfqqjmLn1kWTyzDaBSxOVCyyADvhjCfiUwXoQXM44jfl512eH2kfj9XfN2t86tCCv5kkq7-aXsxa-QoUjVwC9w"  width="100%" alt="Product 3">
+    
+                            <h6 class="mt-3">SASSAFRAS</h6>
+                            <p>High Neck Cropped Top</p>
+                            <p class="text-success fw-bold">Rs. 399 <span class="text-muted text-decoration-line-through">Rs. 999</span> (60% OFF)</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="product-card p-3">
+                            <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTjTR3B9kefHz_Wjn40nRP5Q7o2aSotHA7mXfqqjmLn1kWTyzDaBSxOVCyyADvhjCfiUwXoQXM44jfl512eH2kfj9XfN2t86tCCv5kkq7-aXsxa-QoUjVwC9w"  width="100%" alt="Product 3">
+    
+                            <h6 class="mt-3">SASSAFRAS</h6>
+                            <p>High Neck Cropped Top</p>
+                            <p class="text-success fw-bold">Rs. 399 <span class="text-muted text-decoration-line-through">Rs. 999</span> (60% OFF)</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="product-card p-3">
+                            <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTjTR3B9kefHz_Wjn40nRP5Q7o2aSotHA7mXfqqjmLn1kWTyzDaBSxOVCyyADvhjCfiUwXoQXM44jfl512eH2kfj9XfN2t86tCCv5kkq7-aXsxa-QoUjVwC9w"  width="100%" alt="Product 3">
+    
+                            <h6 class="mt-3">SASSAFRAS</h6>
+                            <p>High Neck Cropped Top</p>
+                            <p class="text-success fw-bold">Rs. 399 <span class="text-muted text-decoration-line-through">Rs. 999</span> (60% OFF)</p>
+                        </div>
+                    </div>
+                </div>
+               
+              
+            </div>
+           
+     
+        </div>
+        
+    </div>
+</div>

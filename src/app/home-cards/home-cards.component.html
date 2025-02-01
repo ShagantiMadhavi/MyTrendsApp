@@ -1,0 +1,26 @@
+<div class="cards container-sm">
+    <!-- <div class="d-flex flex-wrap gap-2">
+
+        <div class="" *ngFor="let item of cards">
+            <div class="card">
+                <img src="{{item.img}}" class="card-img-top" alt="...">
+                <div class="card-body text-center">
+                    <p class="card-text lh-sm fw-bold">{{item.cat}}</p>
+                    <h5 class="card-title lh-sm fw-bold">{{item.discount}}</h5>
+                    <p class="card-text lh-sm fw-bold">Shop Now</p>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <div class="d-flex flex-wrap justify-content-start align-items-center gap-2">
+        <div *ngFor="let item of cards" class="card">
+            <img src="{{item.img}}" class="card-img-top" alt="...">
+            <div class="card-body text-center">
+                <p class="card-text lh-sm fw-bold">{{item.cat}}</p>
+                <h5 class="card-title lh-sm fw-bold">{{item.discount}}</h5>
+                <p class="card-text lh-sm fw-bold">Shop Now</p>
+            </div>
+        </div>
+    </div>
+    
+</div>

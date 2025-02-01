@@ -1,0 +1,70 @@
+/* General Footer Styling */
+.footer {
+  background-color: #f8f9fa; /* Light background for the footer */
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.footer h5 {
+  font-size: 16px;
+  margin-bottom: 15px;
+  color: #212529;
+}
+
+.footer ul {
+  padding: 0;
+  list-style: none;
+}
+
+.footer ul li {
+  margin-bottom: 10px;
+}
+
+.footer ul li a {
+  color: #6c757d;
+  font-size: 14px;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.footer ul li a:hover {
+  color: #000;
+  text-decoration: underline;
+}
+
+.footer img.app-logo {
+  max-width: 140px;
+  max-height: 40px;
+  cursor: pointer;
+}
+
+/* Social Media Icons */
+.footer .social-icons a img {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s ease;
+}
+
+.footer .social-icons a img:hover {
+  transform: scale(1.2);
+}
+
+/* Popular Searches */
+.footer p {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #6c757d;
+}
+
+.footer hr {
+  border: 1px solid #dee2e6;
+}
+
+.footer .bg-secondary {
+  background-color: #343a40 !important; /* Dark footer bottom */
+  color: #fff !important;
+}
+
+.footer .bg-secondary a {
+  color: #fff;
+  text-decoration: none;
+}

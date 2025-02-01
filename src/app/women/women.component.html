@@ -1,0 +1,497 @@
+<div class="container-fluid">
+   <nav class="pt-3" aria-label="breadcrumb">
+      <ol class="breadcrumb">
+         <li class="breadcrumb-item"><a [routerLink]="['/home']" routerLinkActive="router-link-active"
+               class="fw-bold"><span style="font-size: 10px;">HOME</span></a></li>
+         <li class="breadcrumb-item active" aria-current="page"><span style="font-size: 10px;"
+               class="fw-bold">WOMEN</span></li>
+      </ol>
+   </nav>
+   <div class="row">
+      <!-- Left Header -->
+      <div class="col-2 left-col">
+         <span class="pb-3 pt-3 fw-bold"> FILTERS </span>
+         <span class="pb-3 pt-0 fw-bold" style="float: right; color: rgb(248, 41, 182);">CLEAR ALL</span>
+         <div class="mt-4">
+            <p class="fw-bold" style="font-size: 0.9rem;">GENDER</p>
+            <div class="form-check">
+               <input class="form-check-input custom-radio" type="radio" name="gender" id="women" checked>
+               <label class="form-check-label fw-bold" for="women"
+                  style="font-size: small; color: rgb(74, 67, 67);">WOMEN</label>
+            </div>
+            <div class="form-check">
+               <input class="form-check-input custom-radio" type="radio" name="gender" id="girls">
+               <label class="form-check-label fw-bold" for="girls"
+                  style="font-size: small; color: rgb(74, 67, 67);">GIRLS</label>
+            </div>
+         </div>
+         <div class="side-menu">
+            <!-- cat -->
+            <div class="pt-4">
+               <p class="fw-bold" style="font-size: small;">CATEGORIES</p>
+               <div *ngFor="let item of category">
+                  <div class="form-check">
+                     <input class="form-check-input custom-checkbox" type="checkbox" id={{item.id}}>
+                     <label class="form-check-label" for={{item.id}}>{{item.name}}<span
+                           style="color: rgb(129, 122, 122);">
+                           ({{item.count}})</span></label>
+                  </div>
+               </div>
+            </div>
+
+            <!-- brand -->
+            <div class="pt-4">
+               <p class="fw-bold" style="font-size: small;">BRAND</p>
+               <div *ngFor="let item of brand">
+                  <div class="form-check">
+                     <input class="form-check-input custom-checkbox" type="checkbox" id={{item.id}}>
+                     <label class="form-check-label" for={{item.id}}>{{item.name}}<span
+                           style="color: rgb(129, 122, 122);"> ({{item.count}})</span></label>
+                  </div>
+               </div>
+            </div>
+
+            <!-- price -->
+            <div class="pt-4">
+               <p class="fw-bold" style="font-size: small;">PRICE</p>
+               <input type="range" value="40" min="0" max="100" step="1" class="progress" style="color: red;">
+            </div>
+
+            <div>
+               <p class="fw-bold" style="font-size: small;">COLOR</p>
+               <div *ngFor="let item of color">
+                  <div class="form-check">
+                     <input class="form-check-input custom-checkbox" type="checkbox" id={{item.id}}>
+                     <label class="form-check-label" for={{item.id}}><span class="dot"
+                           [style.backgroundColor]="item.name" [style.border]="item.border"></span>
+                        {{item.name}}</label>
+                  </div>
+               </div>
+
+            </div>
+
+
+            <div class="pt-4">
+               <p class="fw-bold" style="font-size: small;color: palevioletred  !important;">DISCOUNT RANGE</p>
+
+               <div *ngFor="let item of discount">
+                  <div class="form-check">
+                     <input class="form-check-input" type="radio" name="gender" id={{item.id}} checked>
+                     <label class="form-check-label" for="women">{{item.value}}</label>
+                  </div>
+               </div>
+
+            </div>
+         </div>
+      </div>
+
+      <div class="col-10 right-col">
+         <span class="d-flex justify-content-between fw-bold">
+            <!-- SIZE Button --> <span data-bs-toggle="collapse" href="#collapseExample" role="button"
+               aria-expanded="false" aria-controls="collapseExample"
+               style="cursor: pointer;color: rgb(255, 85, 0);">SIZE</span>
+            <!-- <button type="button" class="btn btn-dark">Dark</button> -->
+            <!-- Dropdown -->
+            <select class="form-select me-4" aria-label="Default select example" style="width: 170px;">
+               <option>Recommended</option>
+               <option value="1">Popularity</option>
+               <option value="2">Customer Rating</option>
+               <option value="3">Price</option>
+            </select>
+         </span>
+
+
+
+         <!-- Collapsible content -->
+         <div class="collapse mt-3" id="collapseExample">
+            <div class="card card-body">
+
+
+               <div class="row">
+                  <div class="col">
+                     <span class="fw-bold">XS</span>
+                     <div *ngFor="let item of sizes.size_s">
+                        <div class="form-check">
+                           <input class="form-check-input custom-checkbox" type="checkbox" id={{item.id}}>
+                           <label class="form-check-label" for={{item.id}}>{{item.bust}}</label>
+                        </div>
+                        <div class="form-check">
+                           <input class="form-check-input custom-checkbox" type="checkbox" id={{item.id}}>
+                           <label class="form-check-label" for={{item.id}}>{{item.waist}}</label>
+                        </div>
+                        <div class="form-check">
+                           <input class="form-check-input custom-checkbox" type="checkbox" id={{item.id}}>
+                           <label class="form-check-label" for={{item.id}}>{{item.hip}}</label>
+                        </div>
+                        <div class="form-check">
+                           <input class="form-check-input custom-checkbox" type="checkbox" id={{item.id}}>
+                           <label class="form-check-label" for={{item.id}}>{{item.us}}</label>
+                        </div>
+                        <div class="form-check">
+                           <input class="form-check-input custom-checkbox" type="checkbox" id={{item.id}}>
+                           <label class="form-check-label" for={{item.id}}>{{item.uk}}</label>
+
+                        </div>
+                        <div class="form-check">
+                           <input class="form-check-input custom-checkbox" type="checkbox" id={{item.id}}>
+                           <label class="form-check-label" for={{item.id}}>{{item.nz}}</label>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col">
+                     <span class="fw-bold">S</span>
+                     <div *ngFor="let item of sizes.size_s">
+                        <div class="form-check">
+                           <input class="form-check-input custom-checkbox" type="checkbox" id={{item.id}}>
+                           <label class="form-check-label" for={{item.id}}>{{item.bust}}</label>
+                        </div>
+                        <div class="form-check">
+                           <input class="form-check-input custom-checkbox" type="checkbox" id={{item.id}}>
+                           <label class="form-check-label" for={{item.id}}>{{item.waist}}</label>
+                        </div>
+                        <div class="form-check">
+                           <input class="form-check-input custom-checkbox" type="checkbox" id={{item.id}}>
+                           <label class="form-check-label" for={{item.id}}>{{item.hip}}</label>
+                        </div>
+                        <div class="form-check">
+                           <input class="form-check-input custom-checkbox" type="checkbox" id={{item.id}}>
+                           <label class="form-check-label" for={{item.id}}>{{item.us}}</label>
+                        </div>
+                        <div class="form-check">
+                           <input class="form-check-input custom-checkbox" type="checkbox" id={{item.id}}>
+                           <label class="form-check-label" for={{item.id}}>{{item.uk}}</label>
+
+                        </div>
+                        <div class="form-check">
+                           <input class="form-check-input custom-checkbox" type="checkbox" id={{item.id}}>
+                           <label class="form-check-label" for={{item.id}}>{{item.nz}}</label>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col">
+                     <span class="fw-bold">M</span>
+                     <div *ngFor="let item of sizes.size_s">
+                        <div class="form-check">
+                           <input class="form-check-input custom-checkbox" type="checkbox" id={{item.id}}>
+                           <label class="form-check-label" for={{item.id}}>{{item.bust}}</label>
+                        </div>
+                        <div class="form-check">
+                           <input class="form-check-input custom-checkbox" type="checkbox" id={{item.id}}>
+                           <label class="form-check-label" for={{item.id}}>{{item.waist}}</label>
+                        </div>
+                        <div class="form-check">
+                           <input class="form-check-input custom-checkbox" type="checkbox" id={{item.id}}>
+                           <label class="form-check-label" for={{item.id}}>{{item.hip}}</label>
+                        </div>
+                        <div class="form-check">
+                           <input class="form-check-input custom-checkbox" type="checkbox" id={{item.id}}>
+                           <label class="form-check-label" for={{item.id}}>{{item.us}}</label>
+                        </div>
+                        <div class="form-check">
+                           <input class="form-check-input custom-checkbox" type="checkbox" id={{item.id}}>
+                           <label class="form-check-label" for={{item.id}}>{{item.uk}}</label>
+
+                        </div>
+                        <div class="form-check">
+                           <input class="form-check-input custom-checkbox" type="checkbox" id={{item.id}}>
+                           <label class="form-check-label" for={{item.id}}>{{item.nz}}</label>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col">
+                     <span class="fw-bold">L</span>
+                     <div *ngFor="let item of sizes.size_s">
+                        <div class="form-check">
+                           <input class="form-check-input custom-checkbox" type="checkbox" id={{item.id}}>
+                           <label class="form-check-label" for={{item.id}}>{{item.bust}}</label>
+                        </div>
+                        <div class="form-check">
+                           <input class="form-check-input custom-checkbox" type="checkbox" id={{item.id}}>
+                           <label class="form-check-label" for={{item.id}}>{{item.waist}}</label>
+                        </div>
+                        <div class="form-check">
+                           <input class="form-check-input custom-checkbox" type="checkbox" id={{item.id}}>
+                           <label class="form-check-label" for={{item.id}}>{{item.hip}}</label>
+                        </div>
+                        <div class="form-check">
+                           <input class="form-check-input custom-checkbox" type="checkbox" id={{item.id}}>
+                           <label class="form-check-label" for={{item.id}}>{{item.us}}</label>
+                        </div>
+                        <div class="form-check">
+                           <input class="form-check-input custom-checkbox" type="checkbox" id={{item.id}}>
+                           <label class="form-check-label" for={{item.id}}>{{item.uk}}</label>
+
+                        </div>
+                        <div class="form-check">
+                           <input class="form-check-input custom-checkbox" type="checkbox" id={{item.id}}>
+                           <label class="form-check-label" for={{item.id}}>{{item.nz}}</label>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col">
+                     <span class="fw-bold">XL</span>
+                     <div *ngFor="let item of sizes.size_s">
+                        <div class="form-check">
+                           <input class="form-check-input custom-checkbox" type="checkbox" id={{item.id}}>
+                           <label class="form-check-label" for={{item.id}}>{{item.bust}}</label>
+                        </div>
+                        <div class="form-check">
+                           <input class="form-check-input custom-checkbox" type="checkbox" id={{item.id}}>
+                           <label class="form-check-label" for={{item.id}}>{{item.waist}}</label>
+                        </div>
+                        <div class="form-check">
+                           <input class="form-check-input custom-checkbox" type="checkbox" id={{item.id}}>
+                           <label class="form-check-label" for={{item.id}}>{{item.hip}}</label>
+                        </div>
+                        <div class="form-check">
+                           <input class="form-check-input custom-checkbox" type="checkbox" id={{item.id}}>
+                           <label class="form-check-label" for={{item.id}}>{{item.us}}</label>
+                        </div>
+                        <div class="form-check">
+                           <input class="form-check-input custom-checkbox" type="checkbox" id={{item.id}}>
+                           <label class="form-check-label" for={{item.id}}>{{item.uk}}</label>
+
+                        </div>
+                        <div class="form-check">
+                           <input class="form-check-input custom-checkbox" type="checkbox" id={{item.id}}>
+                           <label class="form-check-label" for={{item.id}}>{{item.nz}}</label>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col">
+                     <span class="fw-bold">XXL</span>
+                     <div *ngFor="let item of sizes.size_s">
+                        <div class="form-check">
+                           <input class="form-check-input custom-checkbox" type="checkbox" id={{item.id}}>
+                           <label class="form-check-label" for={{item.id}}>{{item.bust}}</label>
+                        </div>
+                        <div class="form-check">
+                           <input class="form-check-input custom-checkbox" type="checkbox" id={{item.id}}>
+                           <label class="form-check-label" for={{item.id}}>{{item.waist}}</label>
+                        </div>
+                        <div class="form-check">
+                           <input class="form-check-input custom-checkbox" type="checkbox" id={{item.id}}>
+                           <label class="form-check-label" for={{item.id}}>{{item.hip}}</label>
+                        </div>
+                        <div class="form-check">
+                           <input class="form-check-input custom-checkbox" type="checkbox" id={{item.id}}>
+                           <label class="form-check-label" for={{item.id}}>{{item.us}}</label>
+                        </div>
+                        <div class="form-check">
+                           <input class="form-check-input custom-checkbox" type="checkbox" id={{item.id}}>
+                           <label class="form-check-label" for={{item.id}}>{{item.uk}}</label>
+
+                        </div>
+                        <div class="form-check">
+                           <input class="form-check-input custom-checkbox" type="checkbox" id={{item.id}}>
+                           <label class="form-check-label" for={{item.id}}>{{item.nz}}</label>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col">
+                     <span class="fw-bold">3XL</span>
+                     <div *ngFor="let item of sizes.size_s">
+                        <div class="form-check">
+                           <input class="form-check-input custom-checkbox" type="checkbox" id={{item.id}}>
+                           <label class="form-check-label" for={{item.id}}>{{item.bust}}</label>
+                        </div>
+                        <div class="form-check">
+                           <input class="form-check-input custom-checkbox" type="checkbox" id={{item.id}}>
+                           <label class="form-check-label" for={{item.id}}>{{item.waist}}</label>
+                        </div>
+                        <div class="form-check">
+                           <input class="form-check-input custom-checkbox" type="checkbox" id={{item.id}}>
+                           <label class="form-check-label" for={{item.id}}>{{item.hip}}</label>
+                        </div>
+                        <div class="form-check">
+                           <input class="form-check-input custom-checkbox" type="checkbox" id={{item.id}}>
+                           <label class="form-check-label" for={{item.id}}>{{item.us}}</label>
+                        </div>
+                        <div class="form-check">
+                           <input class="form-check-input custom-checkbox" type="checkbox" id={{item.id}}>
+                           <label class="form-check-label" for={{item.id}}>{{item.uk}}</label>
+
+                        </div>
+                        <div class="form-check">
+                           <input class="form-check-input custom-checkbox" type="checkbox" id={{item.id}}>
+                           <label class="form-check-label" for={{item.id}}>{{item.nz}}</label>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col">
+                     <span class="fw-bold">4XL</span>
+                     <div *ngFor="let item of sizes.size_s">
+                        <div class="form-check">
+                           <input class="form-check-input custom-checkbox" type="checkbox" id={{item.id}}>
+                           <label class="form-check-label" for={{item.id}}>{{item.bust}}</label>
+                        </div>
+                        <div class="form-check">
+                           <input class="form-check-input custom-checkbox" type="checkbox" id={{item.id}}>
+                           <label class="form-check-label" for={{item.id}}>{{item.waist}}</label>
+                        </div>
+                        <div class="form-check">
+                           <input class="form-check-input custom-checkbox" type="checkbox" id={{item.id}}>
+                           <label class="form-check-label" for={{item.id}}>{{item.hip}}</label>
+                        </div>
+                        <div class="form-check">
+                           <input class="form-check-input custom-checkbox" type="checkbox" id={{item.id}}>
+                           <label class="form-check-label" for={{item.id}}>{{item.us}}</label>
+                        </div>
+                        <div class="form-check">
+                           <input class="form-check-input custom-checkbox" type="checkbox" id={{item.id}}>
+                           <label class="form-check-label" for={{item.id}}>{{item.uk}}</label>
+
+                        </div>
+                        <div class="form-check">
+                           <input class="form-check-input custom-checkbox" type="checkbox" id={{item.id}}>
+                           <label class="form-check-label" for={{item.id}}>{{item.nz}}</label>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+
+            </div>
+         </div>
+
+         <!-- Cards Section -->
+
+         <div>
+            <div class="cards-container">
+
+               <div class="product" *ngFor="let item of products">
+                  <div class="product-card float-start  p-0">
+                     <img data-bs-toggle="modal" data-bs-target="#exampleModal" src={{item.link}} alt="Product 3"
+                        width="100%" id={{item.id}} (click)="ViewImage(item)">
+                     <div class="item-review ms-2">
+                        <small> <span class="fw-bold">{{item.rating}} <i class="fa-solid fa-star"
+                                 style="color: #000066;"></i> | {{item.no_of_ratings}}</span></small>
+                     </div>
+                     <div id="whishlist-btn">
+                        <div class="d-grid gap-2 m-2">
+                           <button class="btn" type="button"><small><span class="fw-bold"><i
+                                       class="fa-regular fa-heart me-2"></i>WHISHLIST</span></small></button>
+                        </div>
+                        <p class="text-muted ms-3">Sizes: XL</p>
+                     </div>
+
+                     <div class="item-desc ms-1">
+                        <span class="mt-1 fw-bold" id="item-name">{{item.name}}</span><br>
+                        <span>{{item.type}}</span>
+                     </div>
+
+                     <div class="item-price ms-1">
+                        <p class=""><span class="fw-bold">Rs. {{item.price}} </span> <span
+                              class="text-decoration-line-through me-2 text-muted">Rs. {{item.stricked_price}}</span>
+                           <span class="" style="color: orange;">({{item.discount}} OFF)</span>
+                        </p>
+                     </div>
+
+                  </div>
+               </div>
+            </div>
+         </div>
+
+
+         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"
+            height="400px">
+            <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+               <div class="modal-content">
+                  <div class="modal-header">
+                     <h5 class="modal-title" id="exampleModalLabel">Product Details</h5>
+                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                     <div class="view-box row">
+
+                        <div class="img-block">
+                           <img src="{{imgUrl}}" alt="Product Image" class="img-fluid"
+                              style="border-radius: 10px; height: 100%; width: 100%;">
+
+                        </div>
+
+                        <div class="desc-block pt-4">
+
+                           <h3>{{imgName}}</h3>
+
+                           <h5>{{imgType}}</h5>
+
+                           <div class="px-2" style="height: 30px;width: 200px;border: 1px solid black;">
+                              <span style="" class="fw-bold"><span style="color: rgb(69, 30, 210);">★</span> {{imgRating}} |
+                                 {{imgNoofRatings}}K Ratings</span>
+                           </div>
+                           <hr>
+
+                           <span class="text-muted">{{imgType}} - {{imgDesc}}</span>
+                           <hr>
+                           <p>
+                              <span class="text-danger h4 fw-bold me-3">₹{{imgPrice}}</span>
+                              <span class="text-muted h5 me-1">MRP</span>
+                              <span class="text-muted h5 text-decoration-line-through ms-2 h4">₹{{imgStrkPrice}}</span>
+                              <span class="ms-2 fw-bold" style="color: orange;">( {{imgDiscount}} OFF )</span><br>
+                              <span class="text-success fw-bold">Inclusive of all taxes</span>
+
+                           </p>
+
+                           <p><strong>SELECT SIZE</strong></p>
+                           <div>
+                              <button class="btn btn-outline-primary btn-sm me-2 p-3 fw-bold"
+                                 style="border-radius: 50%; height: 50px; width: 50px;">S</button>
+                              <button class="btn btn-outline-danger btn-sm me-2 p-3 fw-bold"
+                                 style="border-radius: 50%; height: 50px; width: 50px;">M</button>
+                              <button class="btn btn-outline-info btn-sm me-2 p-3 fw-bold"
+                                 style="border-radius: 50%; height: 50px; width: 50px;">L</button>
+                              <button class="btn btn-outline-success btn-sm me-2 p-3 fw-bold"
+                                 style="border-radius: 50%; height: 50px; width: 50px;">XL</button>
+                              <button class="btn btn-outline-secondary btn-sm me-2 p-3 fw-bold"
+                                 style="border-radius: 50%; height: 50px; width: 50px;">XXL</button>
+                           </div>
+
+                           <div class="mt-4" style="width: 200px;">
+                              <h5>Delivery Options</h5>
+                              <input type="text" class="form-control" placeholder="Enter pincode">
+                              <ul class="mt-2">
+                                 <li>100% Original Products</li>
+                                 <li>Pay on delivery might be available</li>
+                                 <li>Easy 14 days returns and exchanges</li>
+                              </ul>
+                           </div>
+
+                           <div class="mt-4">
+                              <h5>Best Offers</h5>
+                              <ul>
+                                 <li><strong>Best Price: Rs. {{imgPrice}}</strong></li>
+                                 <li>Applicable on: Orders above Rs. 499 (only on first purchase)</li>
+                                 <li>Coupon code: <strong>ETHNICDEAL</strong></li>
+                                 <li>Coupon Discount: 30% off (Your total savings: Rs. 1524)</li>
+                                 <li>10% Discount on HDFC Bank Credit Card EMI</li>
+                                 <li>10% Discount on Kotak Credit and Debit Cards</li>
+                              </ul>
+                           </div>
+                           <p class="mt-3"><strong>Color:</strong> Black</p>
+                           <p><strong>Delivery:</strong> Estimated delivery within 5-7 days.</p>
+                           <div class="mt-4">
+
+                              <span><button class="btn btn-primary btn-lg me-1"><i
+                                       class="fas fa-shopping-cart me-2"></i>Add to Cart</button> <button
+                                    class="btn btn-success btn-lg"><i class="fas fa-bolt me-2"></i>Buy Now</button>
+                              </span>
+                           </div>
+                        </div>
+
+                     </div>
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+
+      </div>
+
+   </div>
+
+
+<app-footer></app-footer>
