@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "xxx-1": {
+    "mi-trends": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/xxx-1",
+            "outputPath": "dist/mi-trends",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -59,10 +59,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "xxx-1:build:production"
+              "buildTarget": "mi-trends:build:production"
             },
             "development": {
-              "buildTarget": "xxx-1:build:development"
+              "buildTarget": "mi-trends:build:development"
             }
           },
           "defaultConfiguration": "development"

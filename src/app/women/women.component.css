@@ -246,7 +246,7 @@ img{
         padding: 2%;
         height: 90%;
         width: 47%;
-        border: 2px solid red;
+        /* border: 2px solid red; */
         border-radius: 5px;
         transition: transform 0.2s;
         
@@ -274,7 +274,7 @@ img{
         padding: 2%;
         height: 90%;
         width: 22%;
-        border: 2px solid red;
+        /* border: 2px solid red; */
         border-radius: 5px;
         transition: transform 0.2s;
         
@@ -303,7 +303,7 @@ img{
         padding: 2%;
         height: 90%;
         width: 30%;
-        border: 2px solid red;
+        /* border: 2px solid red; */
         border-radius: 5px;
         transition: transform 0.2s;
         
